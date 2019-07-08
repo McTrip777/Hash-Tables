@@ -6,7 +6,7 @@ class array:
         # Your code here
         pass
 
-
+ 
 # Double the size of the given array
 def resize_array():
     # Your code here
