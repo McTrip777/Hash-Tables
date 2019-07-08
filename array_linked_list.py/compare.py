@@ -113,4 +113,4 @@ def add_n_elements_delete_half_random(n):
 
 
 # add_n_elements(1000000)
-add_n_elements_delete_half_random(40000)  # Keep this under 50k
+add_n_elements_delete_half_random(5000)  # Keep this under 50k
