@@ -26,7 +26,7 @@ def hash(string, max):
     hashNum = 5381
     for x in string:
         hashNum = (( hashNum << 5) + hashNum) + ord(x)
-    return hashNum % (max - 1)
+    return hashNum % max
 
 # '''
 # Fill this in.
@@ -36,15 +36,11 @@ def hash(string, max):
 def hash_table_insert(hash_table, key, value):
     index = hash(key, hash_table.capacity)
     pair = hash_table.storage[index]
-    if pair is None:
+    if pair is  not None:
+        print("Error inserting")
+    else:
         hash_table.storage[index] = Pair(key, value)
-        return
-    prev = pair
-    # while pair is not None:
-    #     prev = pair
-    #     pair = pair.next
-    # prev.next = Pair(key, value)
-    
+        
 # '''
 # Fill this in.
 
@@ -58,8 +54,6 @@ def hash_table_remove(hash_table, key):
         return print("That doesn't exist")
     
     
-    
-
 # '''
 # Fill this in.
 
